@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es" style="overflow-y: auto;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="resources/img/icono_opt.jpg">
+
+    <title>Asignación en Memoria</title>
+
+    <link href="resources/font-awesome/css/all.css" rel="stylesheet">
+    <link href="css/bulma.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Asignación de Memoria
+                </h1>
+                <h2 class="subtitle">
+                    Héctor Daniel Rodríguez Feregrino
+                </h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Nombre</label>
+                            <div class="control">
+                                <input id="name-input" class="input" type="text" placeholder="Nombre del proceso...">
+                            </div>
+                        </div>
+                        <label class="label">Tamaño</label>
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <input id="size-input" class="input" type="number" value="0" style="max-width: 100px;">
+                            </div>
+                            <label class="label" style="display: flex;
+                                justify-content: center;
+                                align-items: center;">kB</label>
+                        </div>
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <a id="add-btn" class="button is-link">Agregar</a>
+                            </div>
+                            <div class="control">
+                                <a id="remove-btn" class="button is-danger">Sacar</a>
+                            </div>
+                            <div class="control">
+                                <a id="upload-btn" class="button is-success">Subir en espera</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div style="background-color: #3366cc; height: 250px; margin-bottom: 20px;">
+                            <label class="label" style="text-align: center; color: white;
+                                border-bottom: 1px solid white; padding: 10px;">Atendiendo</label>
+                            <div id="attending-div" style="overflow-y: auto;
+                                height: 190px;"></div>
+                        </div>
+                        <div style="background-color: #cc0066; height: 250px;">
+                            <label class="label" style="text-align: center; color: white;
+                                border-bottom: 1px solid white; padding: 10px;">En espera</label>
+                            <div id="waiting-div" style="overflow-y: auto;
+                                height: 190px;"></div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label">Memoria <span style="font-weight: normal;">(15 kB)</span></label>
+                        <div>
+                            <div id="mem0" class="memory-block"><div></div></div>
+                            <div id="mem1" class="memory-block"><div></div></div>
+                            <div id="mem2" class="memory-block"><div></div></div>
+                            <div id="mem3" class="memory-block"><div></div></div>
+                            <div id="mem4" class="memory-block"><div></div></div>
+                            <div id="mem5" class="memory-block"><div></div></div>
+                            <div id="mem6" class="memory-block"><div></div></div>
+                            <div id="mem7" class="memory-block"><div></div></div>
+                            <div id="mem8" class="memory-block"><div></div></div>
+                            <div id="mem9" class="memory-block"><div></div></div>
+                            <div id="mem10" class="memory-block"><div></div></div>
+                            <div id="mem11" class="memory-block"><div></div></div>
+                            <div id="mem12" class="memory-block"><div></div></div>
+                            <div id="mem13" class="memory-block"><div></div></div>
+                            <div id="mem14" class="memory-block"><div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="js/app.js"></script>
+</html>
